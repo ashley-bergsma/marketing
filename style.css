@@ -81,7 +81,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 1px solid purple;
+  border: 0;
   font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
@@ -91,29 +91,39 @@ video {
   border-image-source: linear-gradient(45deg, #e8ca46, #56b2b1);
   border-image-slice: 1;
 }
+.border-two {
+  border: 5px solid;
+  border-image-source: linear-gradient(45deg, #e8ca46, #ffffff);
+  border-image-slice: 1;
+}
+.white-background {
+  background-color: white;
+  opacity: 95%;
+}
 body {
   background-color: #FFFFFF;
 }
 .top-box {
-  background-color: #038B8B;
+  background-color: #56B2B1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   height: 7vh;
   width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
 }
 @media only screen and (min-width: 1024px) {
   .top-box {
-    height: 6vh;
+    height: 8vh;
   }
 }
 .top-box .top {
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 @media only screen and (min-width: 1024px) {
   .top-box .top {
-    width: 80%;
+    width: 100%;
   }
 }
 .nav {
@@ -129,7 +139,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   flex-direction: flex-start;
   color: black;
-  font-size: 1rem;
+  font-size: 2rem;
   text-decoration: none;
   text-align: center;
   padding: 15px 20px;
@@ -137,7 +147,7 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .nav .nav-li a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 .nav .active {
@@ -275,11 +285,12 @@ body {
   border: 5px solid;
   border-image-source: linear-gradient(45deg, #e8ca46, #56b2b1);
   border-image-slice: 1;
-  width: 95%;
-  height: 20vh;
+  width: 100%;
+  height: 28vh;
 }
 footer {
   width: 100%;
+  background-color: #E3BD04;
 }
 footer .footer {
   display: flex;
@@ -287,8 +298,7 @@ footer .footer {
   text-align: center;
   width: 100%;
   height: 20vh;
-  margin-top: 5%;
-  background-color: #E8CA46;
+  background-color: #E3BD04;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 @media only screen and (min-width: 1024px) {
@@ -317,20 +327,31 @@ footer .contact {
 footer .contact:hover {
   text-decoration: underline;
 }
+.about-body {
+  background-image: url("/images/cupcake.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  background-color: #E8CA46;
+}
 .about-team {
   display: flex;
   align-content: center;
   justify-content: center;
   padding-top: 5%;
+  padding-bottom: 5%;
   height: 10vh;
   font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
+  text-shadow: 2px 2px #E8CA46;
+  font-size: 3.5rem;
 }
 .about-peeps {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 5%;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2rem;
+  font-weight: 700;
   width: 100%;
 }
 .about-peeps h4 {
@@ -338,7 +359,7 @@ footer .contact:hover {
 }
 .image-box {
   border: 5px solid;
-  border-image-source: linear-gradient(45deg, #e8ca46, #56b2b1);
+  border-image-source: linear-gradient(45deg, #e8ca46, #ffffff);
   border-image-slice: 1;
   height: 150px;
   width: 150px;
@@ -364,4 +385,67 @@ footer .contact:hover {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+}
+#contact-page {
+  background-image: url("/images/contactbackground.jpg");
+  background-size: cover;
+  background-position: right;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+@media only screen and (min-width: 1024px) {
+  #contact {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.text {
+  margin: 0 auto;
+  width: 80%;
+  height: 25vh;
+  padding: 5%;
+  padding-bottom: 0%;
+  background-color: white;
+  opacity: 95%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.8rem;
+}
+@media only screen and (min-width: 1024px) {
+  .text {
+    height: 47vh;
+    font-size: 2.6rem;
+    text-align: center;
+  }
+}
+.form-box {
+  width: 80%;
+  padding: 5%;
+  margin: 0 auto;
+  background-color: white;
+  opacity: 95%;
+}
+form {
+  display: flex;
+}
+form ul {
+  list-style: none;
+}
+form textarea {
+  width: 95%;
+  height: 10vh;
+}
+label {
+  font-family: 'Open Sans Condensed', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+button {
+  padding: 1em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  background-color: #56B2B1;
+  color: #FFFFFF;
 }
