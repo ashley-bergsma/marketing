@@ -186,6 +186,7 @@ footer .contact {
 footer .contact:hover {
   text-decoration: underline;
 }
+/*about page styling*/
 .about-body {
   background-image: url("/images/cupcake.jpg");
   background-size: cover;
@@ -201,6 +202,7 @@ footer .contact:hover {
   padding-bottom: 5%;
   height: 10vh;
   font-family: 'Great Vibes', cursive;
+  font-weight: 600;
   text-shadow: 2px 2px #E8CA46;
   font-size: 3.5rem;
 }
@@ -230,7 +232,7 @@ footer .contact:hover {
   margin: 0 auto;
 }
 .right {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
