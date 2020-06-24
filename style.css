@@ -190,7 +190,7 @@ footer .contact:hover {
 .about-body {
   background-image: url("/images/cupcake.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-blend-mode: screen;
   background-color: #E8CA46;
 }
@@ -359,6 +359,12 @@ button {
     padding-top: 1%;
     padding-bottom: 0%;
   }
+/*About page*/
+.about-peeps {
+  width: 60%;
+  margin: 0 auto;
+}
+
 /*contact page*/
   #contact {
     display: flex;
