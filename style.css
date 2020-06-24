@@ -148,13 +148,12 @@ body {
 	text-shadow: 0px 1px 0px #3d768a;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #56B2B1 5%, #56B2B1 100%);
-	background-color:#56B2B1;
+	background: linear-gradient(to bottom, #56B2B1 5%, #56B2B1 100%);
+	background-color: #56B2B1;
 }
 .myButton:active {
-	top:1px;
+	top: 1px;
 }
-
 
 .images {
   width: 100%;
@@ -186,6 +185,30 @@ body {
   width: 100%;
   height: 30vh;
 }
+
+.testimonials {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.item{
+  display: flex;
+  justify-content: center;
+}
+.name {
+  text-align: center;
+}
+.person-image img {
+  height: 30vh;
+}
+.comment {
+  background-color: #56B2B1;
+  padding: 8%;
+}
+.comment img {
+  height: 8vh;
+}
+
 footer {
   width: 100%;
   background-color: #E3BD04;
@@ -204,17 +227,7 @@ footer a {
   text-decoration: none;
   color: black;
 }
-footer .contact {
-  font-size: 2rem;
-  font-family: 'Great Vibes', cursive;
-  text-decoration: none;
-  padding-top: 5%;
-  color: black;
-}
 
-footer .contact:hover {
-  text-decoration: underline;
-}
 /*about page styling*/
 .about-body {
   background-image: url("/images/cupcake.jpg");
@@ -223,6 +236,19 @@ footer .contact:hover {
   background-blend-mode: screen;
   background-color: #E8CA46;
 }
+.contact {
+	cursor: pointer;
+	color: #000000;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.5rem;
+	padding: 7px 25px;
+	text-decoration: none;
+}
+
+.contact:hover {
+  color: #FFFFFF;
+}
+ 
 .about-team {
   display: flex;
   align-content: center;
