@@ -235,7 +235,7 @@ body {
   padding: 5%;
   line-height: 20px;
   margin-bottom: 2%;
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 .item .comment:hover {
   background-color: whitesmoke;
@@ -466,7 +466,7 @@ label {
     width: 30%;
   }
   .item .stars img {
-    height: 10vh;
+    height: 9vh;
   }
   footer {
     padding-top: 1%;
