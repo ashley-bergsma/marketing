@@ -215,7 +215,7 @@ body {
 .person-image img {
   height: 35vh;
 }
-.comment {
+.item .comment {
   width: 100%;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -224,17 +224,20 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.comment h4 {
+.item .comment h4 {
   text-align: center;
 }
-.comment img {
+.item .comment img {
   height: 8vh;
 }
-.comment p {
+.item .comment p {
   padding: 5%;
   line-height: 20px;
   margin-bottom: 2%;
   font-size: .8rem;
+}
+.item .comment:hover {
+  background-color: whitesmoke;
 }
 .item .comment .stars {
   display: flex;
@@ -397,7 +400,7 @@ button {
 @media only screen and (min-width: 1000px) {
   /*main content and nav bars*/
   .top-box {
-    height: 7vh;
+    height: 8vh;
   }
   .top-box .top {
     width: 100%;
@@ -441,6 +444,18 @@ button {
   .images .boxTwo,
   .images .boxThree {
     width: 20%;
+  }
+  .testimonial {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .item {
+    width: 30%;
+  }
+  .item .stars img {
+    height: 10vh;
   }
   footer .footer {
     height: 15vh;
