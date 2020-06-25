@@ -314,16 +314,15 @@ footer a {
 }
 .about-peeps h4 {
   font-weight: 900;
+  padding-bottom: 5%;
 }
-.image-box {
-  border: 5px solid;
-  border-image-source: linear-gradient(45deg, #e8ca46, #ffffff);
-  border-image-slice: 1;
-  height: 150px;
-  width: 150px;
-  margin: 0 auto;
+.boxTeam {
+  margin: 10% 0%;
+  background-color: #E8CA46;
+  border-radius: 20px;
 }
 .image-box img {
+  padding-top: 2%;
   height: 150px;
   width: 150px;
   margin: 0 auto;
@@ -343,6 +342,18 @@ footer a {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+}
+.contact-member {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.contact-member img {
+  height: 5vh;
 }
 /* contact page styling */ 
 #contact-page {
@@ -482,7 +493,7 @@ label {
   }
 /*About page*/
 .about-team {
-  font-size: 5.0rem;
+  font-size: 7.0rem;
 }
 .about-peeps {
   width: 60%;
