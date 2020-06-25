@@ -181,20 +181,18 @@ body {
   font-weight: 900;
 }
 .images img {
+  border-image-slice: 1;
   width: 80%;
   margin: 0 auto;
   height: 35vh;
 }
 
 .testimonial {
-  width: 45%;
+  width: 60%;
   margin: 0 auto;
-  font-family: 'Josefin Sans', sans-serif;
 }
 .item{
-  background-color: #e8ca46;
-  box-shadow: 5px 5px #F5F5F5	;
-  border-radius: 25px;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,7 +203,6 @@ body {
   margin-bottom: 5%;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: bold;
 }
 .person-image {
   display: flex;
@@ -216,13 +213,9 @@ body {
   height: 35vh;
 }
 .comment {
-  width: 100%;
+  padding: 2% 2%;
+  width: 80%;
   margin: 0 auto;
-  background-color: #FFFFFF;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 .comment h4 {
   text-align: center;
@@ -230,19 +223,7 @@ body {
 .comment img {
   height: 8vh;
 }
-.comment p {
-  padding: 5%;
-  line-height: 20px;
-  margin-bottom: 2%;
-  font-size: .8rem;
-}
-.item .comment .stars {
-  display: flex;
-  justify-content: space-around;
-}
-.item .comment .stars img {
-  width: 20%;
-}
+
 footer {
   width: 100%;
   background-color: #E3BD04;
@@ -433,9 +414,6 @@ button {
   }
   .images {
     flex-direction: row;
-  }
-  .images img {
-    height: 30vh;
   }
   .images .boxOne,
   .images .boxTwo,
