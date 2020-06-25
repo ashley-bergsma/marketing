@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  height: 6vh;
+  height: 4vh;
   width: 100%;
 }
 
@@ -184,11 +184,11 @@ body {
 .images img {
   width: 80%;
   margin: 0 auto;
-  height: 35vh;
+  height: 25vh;
 }
 
 .testimonial {
-  width: 45%;
+  width: 80%;
   margin: 0 auto;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -214,7 +214,7 @@ body {
   padding: 2%;
 }
 .person-image img {
-  height: 35vh;
+  height: 25vh;
 }
 .item .comment {
   width: 100%;
@@ -245,22 +245,27 @@ body {
   justify-content: space-around;
 }
 .item .comment .stars img {
-  width: 20%;
+  width: 18%;
 }
 footer {
+  padding-top: 7%;
+  padding-bottom: 7%;
   width: 100%;
   background-color: #E3BD04;
+  font-size: 1.0rem;
 }
 footer .footer {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   background-color: #E3BD04;
   font-family: 'Open Sans Condensed', sans-serif;
 }
-
+footer .contact {
+  font-size: 3.0rem;
+}
 footer a {
   text-decoration: none;
   color: black;
@@ -278,7 +283,7 @@ footer a {
 	cursor: pointer;
 	color: #000000;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.0rem;
 	padding: 7px 25px;
 	text-decoration: none;
 }
@@ -361,14 +366,14 @@ footer a {
   background-color: white;
   opacity: 95%;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 }
 
 .form-box {
   width: 80%;
   padding: 5%;
   margin: 0 auto;
-  margin-bottom: 12%;
+  margin-bottom: 25%;
   background-color: white;
   opacity: 95%;
 }
@@ -394,7 +399,7 @@ label {
 @media only screen and (min-width: 1000px) {
   /*main content and nav bars*/
   .top-box {
-    height: 8vh;
+    height: 6vh;
   }
   .top-box .top {
     width: 100%;
