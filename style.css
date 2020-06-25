@@ -155,7 +155,6 @@ body {
 .myButton:active {
 	top: 1px;
 }
-
 .images {
   width: 100%;
   margin: 0 auto;
@@ -164,7 +163,6 @@ body {
   align-content: center;
   margin-top: 2.5%;
 }
-
 .images .boxOne,
 .images .boxTwo,
 .images .boxThree {
@@ -175,7 +173,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .images h3 {
   text-align: center;
   padding: 5%;
@@ -184,9 +181,8 @@ body {
 .images img {
   width: 80%;
   margin: 0 auto;
-  height: 20vh;
+  height: 22.5vh;
 }
-
 .testimonial {
   width: 80%;
   margin: 0 auto;
@@ -243,9 +239,11 @@ body {
 .item .comment .stars {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
 }
 .item .comment .stars img {
-  width: 18%;
+  width: 15%;
 }
 footer {
   padding-top: 7%;
@@ -287,11 +285,9 @@ footer a {
 	padding: 7px 25px;
 	text-decoration: none;
 }
-
 .contact:hover {
   color: #FFFFFF;
 }
- 
 .about-team {
   display: flex;
   align-content: center;
@@ -320,12 +316,17 @@ footer a {
   margin: 10% 0%;
   background-color: #E8CA46;
   border-radius: 20px;
+  box-shadow: 3px 3px whitesmoke;
 }
 .image-box img {
   padding-top: 2%;
   height: 150px;
   width: 150px;
   margin: 0 auto;
+}
+.boxTeam h5 {
+  text-align: left;
+  padding: 2%;
 }
 .right {
   width: 50%;
@@ -334,6 +335,7 @@ footer a {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  padding: 2%;
 }
 .left {
   width: 50%;
@@ -342,6 +344,7 @@ footer a {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  padding: 2%;
 }
 .contact-member {
   padding-top: 5%;
@@ -351,8 +354,16 @@ footer a {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  transition: 1s background-color;
+}
+.contact-member:hover {
+  background-color: whitesmoke;
+}
+.contact-member img:hover {
+  height: 6vh;
 }
 .contact-member img {
+  transition: 1s height;
   height: 5vh;
 }
 /* contact page styling */ 
@@ -367,7 +378,6 @@ footer a {
   flex-direction: column;
   padding: 5%;
 }
-
 .text {
   margin: 0 auto;
   margin-top: 6%;
@@ -380,7 +390,6 @@ footer a {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2.0rem;
 }
-
 .form-box {
   width: 80%;
   padding: 5%;
@@ -404,7 +413,6 @@ label {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
 .contact-footer {
   height: 10vh;
 }
@@ -477,7 +485,8 @@ label {
     width: 30%;
   }
   .item .stars img {
-    height: 9vh;
+    height: 8vh;
+    width: 20%;
   }
   footer {
     padding-top: 1%;
@@ -500,10 +509,10 @@ label {
   margin: 0 auto;
 }
 .right {
-  width: 30%
+  width: 30%;
 }
 .left {
-  width:30%
+  width:30%;
 }
 
 /*contact page*/
