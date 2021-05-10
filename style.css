@@ -1,0 +1,546 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    .border {
+      border: 5px solid;
+      border-image-source: linear-gradient(45deg, #e8ca46, #56b2b1);
+      border-image-slice: 1;
+    }
+    .border-two {
+      border: 5px solid;
+      border-image-source: linear-gradient(45deg, #e8ca46, #ffffff);
+      border-image-slice: 1;
+    }
+    .white-background {
+      background-color: white;
+      opacity: 95%;
+    }
+    body {
+      background-color: #FFFFFF;
+    }
+    .top-box {
+      background-color: #56B2B1;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      height: 4vh;
+      width: 100%;
+    }
+    
+    .top-box .top {
+      display: flex;
+      justify-content: space-evenly;
+      width: 80%;
+    }
+    
+    .nav {
+      width: 100%;
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .nav .nav-li a {
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: black;
+      font-size: 1.6rem;
+      text-decoration: none;
+      text-align: center;
+      padding: 20px;
+      margin-top: 3%;
+      border-right: 1px solid black;
+    }
+    
+    .nav .active {
+      background-color: #E8CA46;
+    }
+    .image-banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-image: url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-bottom: 2px solid #E8CA46;
+      border-top: 2px solid #E8CA46;
+      width: 100%;
+      height: 60vh;
+      padding-top: 10%;
+    }
+    
+    .image-banner .text-banner {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Great Vibes', cursive;
+      font-weight: 600;
+      text-shadow: 2px 2px #038B8B;
+      font-size: 4rem;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .icons {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+      padding-top: 5%;
+      height: 10vh;
+    }
+    
+    .icons .social-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style-type: none;
+      width: 60%;
+    }
+    
+    .icons .social-button img {
+      justify-content: space-evenly;
+      height: 50px;
+      width: 50px;
+    }
+    
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 5%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.5rem;
+    }
+    
+    .intro .statement {
+      padding: 2%;
+    }
+    
+    .register {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    
+    .myButton {
+        box-shadow: 0px 10px 14px -7px #276873;
+        background: linear-gradient(to bottom, #038B8B 5%, #56B2B1 100%);
+        background-color: #038B8B;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 5px 15px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #3d768a;
+    }
+    .myButton:hover {
+        background: linear-gradient(to bottom, #56B2B1 5%, #56B2B1 100%);
+        background-color: #56B2B1;
+    }
+    .myButton:active {
+        top: 1px;
+    }
+    .images {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      margin-top: 2.5%;
+    }
+    .images .boxOne,
+    .images .boxTwo,
+    .images .boxThree {
+      width: 55%;
+      margin: 0 auto;
+      margin-bottom: 2.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .images h3 {
+      text-align: center;
+      padding: 5%;
+      font-weight: 900;
+    }
+    .images img {
+      width: 80%;
+      margin: 0 auto;
+      height: 22.5vh;
+    }
+    .testimonial {
+      width: 80%;
+      margin: 0 auto;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    .item{
+      background-color: #e8ca46;
+      box-shadow: 5px 5px #F5F5F5	;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 5% auto;
+    }
+    .name {
+      text-align: center;
+      margin-bottom: 5%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+    .person-image {
+      display: flex;
+      justify-content: center;
+      padding: 2%;
+    }
+    .person-image img {
+      height: 25vh;
+    }
+    .item .comment {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .item .comment h4 {
+      text-align: center;
+    }
+    .item .comment img {
+      height: 8vh;
+    }
+    .item .comment p {
+      padding: 5%;
+      line-height: 20px;
+      margin-bottom: 2%;
+      font-size: 1.2rem;
+    }
+    .item .comment:hover {
+      background-color: whitesmoke;
+    }
+    .item .comment .stars {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .item .comment .stars img {
+      width: 15%;
+    }
+    footer {
+      padding-top: 2%;
+      padding-bottom: 7%;
+      width: 100%;
+      background-color: #E3BD04;
+      font-size: 1.0rem;
+    }
+    footer .footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      height: 10vh;
+      background-color: #E3BD04;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+    footer .contact {
+      font-size: 3.0rem;
+    }
+    footer a {
+      padding-bottom: 2%;
+      text-decoration: none;
+      color: black;
+    }
+    
+    /*about page styling*/
+    .about-body {
+      background-image: url("/images/cupcake.jpg");
+      background-size: cover;
+      background-position: center top;
+      background-blend-mode: screen;
+      background-color: #E8CA46;
+    }
+    .contact {
+        cursor: pointer;
+        color: #000000;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1.0rem;
+        padding: 7px 25px;
+        text-decoration: none;
+    }
+    .contact:hover {
+      color: #FFFFFF;
+    }
+    .about-team {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      padding-top: 5%;
+      padding-bottom: 0%;
+      height: 10vh;
+      font-family: 'Great Vibes', cursive;
+      font-weight: 600;
+      text-shadow: 2px 2px #E8CA46;
+      font-size: 3.5rem;
+    }
+    .about-peeps {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 5%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .about-peeps h4 {
+      font-weight: 900;
+      padding-bottom: 1%;
+      text-shadow: 1px 1px whitesmoke;
+      letter-spacing: 3px;
+    }
+    .boxTeam .contact-member h5 {
+      text-align: left;
+      padding: 2%;
+      padding-bottom: 5%;
+      font-weight: 200;
+    }
+    .boxTeam {
+      margin: 10% 0%;
+      background-color: #E8CA46;
+      border-radius: 20px;
+      box-shadow: 3px 3px whitesmoke;
+    }
+    .image-box img {
+      padding-top: 2%;
+      height: 150px;
+      width: 150px;
+      margin: 0 auto;
+    }
+    .right {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 2%;
+    }
+    .left {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 2%;
+    }
+    .contact-member {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      background-color: white;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      transition: 1s background-color;
+    }
+    .contact-member:hover {
+      background-color: whitesmoke;
+    }
+    .contact-member img:hover {
+      height: 4vh;
+    }
+    .contact-member img {
+      transition: 1s height;
+      height: 3.5vh;
+    }
+    /* contact page styling */ 
+    #contact-page {
+      background-image: url("/images/contactbackground.jpg");
+      
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    #contact {
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+    }
+    .text {
+      margin: 0 auto;
+      margin-top: 6%;
+      width: 80%;
+      height: 20vh;
+      padding: 5%;
+      padding-bottom: 0%;
+      background-color: white;
+      opacity: 95%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 2.0rem;
+    }
+    .form-box {
+      width: 80%;
+      padding: 5%;
+      margin: 0 auto;
+      margin-bottom: 25%;
+      background-color: white;
+      opacity: 95%;
+    }
+    form {
+      display: flex;
+    }
+    form ul {
+      list-style: none;
+    }
+    form textarea {
+      width: 95%;
+      height: 10vh;
+    }
+    label {
+      font-family: 'Open Sans Condensed', cursive;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .contact-footer {
+      height: 10vh;
+    }
+    .contact-footer p{
+      margin-top: 8%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      text-align: center;
+    }
+    
+    /* media break points*/ 
+    
+    @media only screen and (min-width: 1000px) {
+      /*main content and nav bars*/
+      .top-box {
+        height: 6vh;
+      }
+      .top-box .top {
+        width: 100%;
+      }
+      .nav {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .nav .nav-li a {
+        font-size: 2.5rem;
+      }
+      .image-banner {
+        height: 80vh;
+      }
+      .image-banner .text-banner {
+        font-size: 8rem;
+      }
+      .icons {
+        padding-top: 5%;
+      }
+      .icons .social-row {
+        width: 20%;
+      }
+      .icons .social-button img {
+        height: 80px;
+        width: 80px;
+        justify-content: space-around;
+      }
+      .intro {
+        width: 80%;
+        padding-top: 2%;
+      }
+      .intro .statement {
+        padding: 0% 10%;
+      }
+      .images {
+        flex-direction: row;
+      }
+      .images img {
+        height: 25vh;
+      }
+      .images .boxOne,
+      .images .boxTwo,
+      .images .boxThree {
+        width: 20%;
+        margin-top: 5%;
+      }
+      .testimonial {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .item {
+        width: 30%;
+      }
+      .item .stars img {
+        height: 8vh;
+        width: 20%;
+      }
+      footer {
+        padding-top: 1%;
+        padding-bottom: 1%;
+      }
+      footer .footer {
+        height: 15vh;
+      }
+      footer .contact {
+        font-size: 3rem;
+        padding-top: 0%;
+        padding-bottom: 0%;
+      }
+    /*About page*/
+    .about-team {
+      font-size: 7.0rem;
+      padding-bottom: 2%;
+    }
+    .about-peeps {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .right {
+      width: 30%;
+    }
+    .left {
+      width:30%;
+    }
+    
+    /*contact page*/
+      #contact {
+        display: flex;
+        flex-direction: row;
+      }
+      .text {
+        height: 47vh;
+        font-size: 2.6rem;
+        text-align: center;
+        margin-top: 0%;
+      }
+      .form-box {
+        margin-bottom: 0%;
+      }
+      .contact-footer {
+        height: 15vh;
+      }
+      .contact-footer p{
+        margin-top: 0%;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-align: center;
+      }
+    }
